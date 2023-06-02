@@ -8,7 +8,7 @@
     <title>Restaurant</title>
     <!--<script src="https://kit.fontawesome.com/f121993c04.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/f121993c04.js" crossorigin="anonymous"></script>-->
-    <link rel="style" type="text/css" href="./style.css">
+    <link rel="style" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -25,6 +25,8 @@
             <fieldset>
                 <legend>info about your order</legend>
                 <form id="foodform">
+                   <div><label for="idc">number order</label>
+                        <input type="number" id="idc" min="1" placeholder="Enter ID"> <br></div>
                     <div> <label for="name">Food Name</label>
                         <input type="text" id="name" placeholder="Enter name food"> <br>
                     </div>
@@ -53,23 +55,21 @@
 
 
         </section>
-
-        <section id="food">
-            
-            <table >
+        <div>
+            <table  id="table" style="border: solid;" >
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Name</th>
+                        <th >Name</th>
                         <th>Type</th>
-                        <th>price</th>
+                        <th>Price</th>
                     </tr>
                 </thead>
-                <tbody>
+              <!-- <tbody  >
                     <tr>
                         <td></td>
-                        <td id="na"></td>
-                        <td id="ty"></td>
+                        <td ></td>
+                        <td ></td>
                         <td></td>
                     </tr>
                     <tr>
@@ -84,10 +84,13 @@
                         <td></td>
                         <td></td>
                     </tr>
-                </tbody>
+                </tbody>--> 
             
             </table>
-    
+        </div> 
+
+        <section id="food">
+        </section>
     </main>
     <footer>
 
